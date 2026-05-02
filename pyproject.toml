@@ -16,6 +16,9 @@ dependencies = [
 [project.scripts]
 servicesmith = "servicesmith.cli:app"
 
+[tool.hatch.build.targets.wheel]
+packages = ["servicesmith"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
